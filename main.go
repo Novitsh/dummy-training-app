@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/gin-contrib/multitemplate"
 	"github.com/gin-gonic/gin"
@@ -31,5 +32,7 @@ func main() {
 	r.GET("/about", handlers.About)
 
 	addr := fmt.Sprintf(":%s", cfg.Port)
-	r.Run(addr)
+	if err := r.Run(addr); err != nil {
+		log.Fatalf("server failed to start: %v", err)
+	}
 }

@@ -28,5 +28,6 @@ Open http://localhost:8080
 ## Extend
 
 - Add a new handler in `handlers/`
+- Register the template pair in `createRenderer()` in `main.go`
 - Add a route in `main.go`
 - Add a template in `templates/`
