@@ -1,0 +1,38 @@
+/* static/style.css */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #f9f9f9;
+}
+
+nav {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.85rem;
+}
